@@ -1,5 +1,7 @@
 #! /bin/sh
 
+# To use the file without downloading it use : sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-files.sh)"
+
 # Creation of all files
 
 # Base
@@ -49,3 +51,4 @@ echo -e "In 20s, the scripts will begin to configurate the files, if you want to
 sleep 20
 
 # Files config
+

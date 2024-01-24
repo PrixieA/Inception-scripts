@@ -1,5 +1,7 @@
 #! /bin/sh
 
+# To use the file without downloading it use : sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-docker.sh)"
+
 # To uninstall any conflicting packages
 
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
