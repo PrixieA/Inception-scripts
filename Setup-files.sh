@@ -37,8 +37,8 @@ mkdir ~/Inception/srcs/requirements/nginx/tools
 
 clear
 
-cd Inception
-ls-alR
+cd ~/Inception
+ls -alR
 
 sleep 15
 
