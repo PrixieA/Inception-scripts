@@ -5,8 +5,8 @@
 # Base
 
 mkdir ~/Inception
-mkdir ~/Inception/Makefile
-Mkdir ~/Inception/srcs
+touch ~/Inception/Makefile
+mkdir ~/Inception/srcs
 
 # Sources
 
