@@ -36,45 +36,45 @@ echo 'include etc/nginx/modules-enabled/*.conf;' >> ~/Inception/srcs/requirement
 echo '\n' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo 'events' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '{' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\tworker_connections 1024;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '	worker_connections 1024;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '}' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '\n' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo 'http' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '{' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '\n' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\tserver' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t{' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\tlisten 443 ssl;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\tlisten [::]:443 ssl;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '	server' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '	{' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '		listen 443 ssl;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '		listen [::]:443 ssl;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '\n' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\troot /var/www/html/wordpress;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\tserver_name ${USER}.42.fr;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\tindex index.php index.html index.htm index.nginx-debian.html;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '		root /var/www/html/wordpress;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '		server_name ${USER}.42.fr;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '		index index.php index.html index.htm index.nginx-debian.html;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '\n' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\tlocation / ' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '		location / ' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '{' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\t\tinclude /etc/nginx/mime.types;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\t\ttry_files $uri $uri/ =404;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\t}' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '			include /etc/nginx/mime.types;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '			try_files $uri $uri/ =404;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '		}' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '\n' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\tlocation ~ \.php$' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\t{' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\t\tfastcgi_split_path_info ^(.+\.php)(/.+)$;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\t\tfastcgi_param SCRIPT_FILENAME $request_filename;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\t\tinclude fastcgi_params;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\t\tfastcgi_pass wordpress:9000;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\t\tfastcgi_param HTTPS on;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\t}' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '		location ~ \.php$' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '		{' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '			fastcgi_split_path_info ^(.+\.php)(/.+)$;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '			fastcgi_param SCRIPT_FILENAME $request_filename;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '			include fastcgi_params;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '			fastcgi_pass wordpress:9000;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '			fastcgi_param HTTPS on;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '		}' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '\n' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\tssl_protocols TLSv1.2 TLSv1.3;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\tssl_certificate /etc/nginx/ssl/inception.crt;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\tssl_certificate_key /etc/nginx/ssl/inception.key;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '		ssl_protocols TLSv1.2 TLSv1.3;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '		ssl_certificate /etc/nginx/ssl/inception.crt;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '		ssl_certificate_key /etc/nginx/ssl/inception.key;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '\n' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\taccess_log /var/log/nginx/access.log;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\terror_log /var/log/nginx/error.log;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '		access_log /var/log/nginx/access.log;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '		error_log /var/log/nginx/error.log;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '\n' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t\tgzip on;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '\t}' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '		gzip on;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '	}' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '}' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 
 # New cmds on Dockerfile
