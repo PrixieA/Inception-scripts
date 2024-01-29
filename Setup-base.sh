@@ -59,8 +59,7 @@ ssh-keygen
 
 # reboot
 
-clear
-echo -e "The computer will reboot in 20s, use ctrl+c if you don't want to reboot now"
-sleep 20
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
-sudo reboot
+clear
+echo "You should reboot now $USER"
