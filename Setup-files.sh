@@ -58,9 +58,9 @@ echo "Let's begin with the config of NGINX"
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-nginx.sh)"
 
-clear
-
 sleep 20
+
+clear
 
 # Config of MariaDB
 
@@ -68,9 +68,9 @@ echo "Now MariaDB"
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-mariadb.sh)"
 
-clear
-
 sleep 20
+
+clear
 
 # Config of WordPress
 
@@ -78,9 +78,9 @@ echo "Now WordPress"
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-wordpress.sh)"
 
-clear
-
 sleep 20
+
+clear
 
 # Config of docker-compose
 
@@ -88,19 +88,19 @@ echo "Now docker-compose"
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-dock-compose.sh)"
 
-clear
-
 sleep 20
 
+
+clear
 # Config of env
 
 echo "Now env"
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-env.sh)"
 
-clear
-
 sleep 20
+
+clear
 
 # Config of Makefile
 
@@ -108,6 +108,6 @@ echo "now Makefile"
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-makefile.sh)"
 
-clear
-
 sleep 20
+
+clear

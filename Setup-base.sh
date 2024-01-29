@@ -40,6 +40,10 @@ sudo apt-get install -y ufw
 
 clear
 
+# keygen ssh
+
+ssh-keygen
+
 # Change the default graphical runlevel
 
 sudo systemctl set-default graphical.target
@@ -47,17 +51,17 @@ sudo vim /etc/pam.d/gdm-password # comment the line : auth required pam_succeed_
 
 # Setup of the firewall
 
-sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-files.sh)"
+sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-ufw.sh)"
 
 # Setup of docker
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-docker.sh)"
 
-# keygen ssh
+# Files Configuration
 
-ssh-keygen
+sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-files.sh)"
 
-# reboot
+# OhMyZsh
 
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
