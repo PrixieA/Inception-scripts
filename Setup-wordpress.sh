@@ -70,23 +70,23 @@ echo '\n' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
 
 # It provides an easy-to-use interface for creating custom contact forms and managing submissions, as well as supporting various anti-spam techniques
 
-echo 'wp plugin install contact-form-7 --activate' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
+echo 'wp plugin install contact-form-7 --allow-root --activate' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
 echo '\n' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
 
 # Set the site language to English
 
-echo 'wp language core install en_US --activate' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
+echo 'wp language core install en_US --allow-root --activate' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
 echo '\n' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
 
 # Remove default themes and plugins
 
-echo 'wp theme delete twentynineteen twentytwenty' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
-echo 'wp plugin delete hello' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
+echo 'wp theme delete twentynineteen twentytwenty --allow-root' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
+echo 'wp plugin delete hello --allow-root' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
 echo '\n' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
 
 # Set the permalink structure
 
-echo 'wp rewrite structure '/%postname%/'' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
+echo 'wp rewrite structure '"'"'/%postname%/'"'" >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
 echo '\n' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
 echo 'fi' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
 echo '\n' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
