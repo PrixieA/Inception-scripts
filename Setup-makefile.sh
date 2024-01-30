@@ -5,8 +5,8 @@
 # Config of Makefile
 
 echo 'all: ' >> ~/Inception/Makefile
-echo '	mkdir -p /home/yatang/data/mariadb' >> ~/Inception/Makefile
-echo '	mkdir -p /home/yatang/data/wordpress' >> ~/Inception/Makefile
+echo '	mkdir -p /home/'"$USER"'/data/mariadb' >> ~/Inception/Makefile
+echo '	mkdir -p /home'"$USER"'/data/wordpress' >> ~/Inception/Makefile
 echo '	docker compose -f ./srcs/docker-compose.yml build' >> ~/Inception/Makefile
 echo '	docker compose -f ./srcs/docker-compose.yml up -d' >> ~/Inception/Makefile
 echo '\n' >> ~/Inception/Makefile
