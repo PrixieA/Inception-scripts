@@ -22,8 +22,8 @@ echo 'RUN apt-get update && apt-get install -y default-mysql-client' >> ~/Incept
 echo 'RUN apt-get install -y mariadb-client' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 echo 'RUN wget https://wordpress.org/wordpress-6.2.1.tar.gz -P /var/www/html' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 echo 'RUN cd /var/www/html \' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
-echo '	&& tar -xzf /var/www/html/wordpress-6.1.1.tar.gz \' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
-echo '	&& rm /var/www/html/wordpress-6.1.1.tar.gz' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
+echo '	&& tar -xzf /var/www/html/wordpress-6.2.1.tar.gz \' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
+echo '	&& rm /var/www/html/wordpress-6.2.1.tar.gz' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 echo '\n' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 
 # Ensure that the web server(nginx) has the necessary permissions to read and execute the files within the web root directory
