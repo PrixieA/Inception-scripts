@@ -19,15 +19,7 @@ echo 'COPY ./conf/nginx.conf /etc/nginx/nginx.conf' >> ~/Inception/srcs/requirem
 # RUN: This command runs any command in the Docker image.
 # apt-get -y: The -y option allows you to answer YES to this kind of question. Do you want to continue? [Y/n] Abort.
 # mkdir -p: The -p option tells the mkdir command to create any parent directories that do not already exist. 
-# COPY: The command is used to copy files from the build context to a specific location in the container's filesystem. 
-
-# Build a docker container
-
-docker build -t nginx ~/Inception/srcs/requirements/nginx
-docker image ls
-docker run -it nginx
-exit
-docker container ls
+# COPY: The command is used to copy files from the build context to a specific location in the container's filesystem.
 
 # Configuration file
 
