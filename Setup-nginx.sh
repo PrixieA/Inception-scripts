@@ -12,7 +12,7 @@ echo 'RUN apt-get install -y vim' >> ~/Inception/srcs/requirements/nginx/Dockerf
 echo 'RUN apt-get install -y curl' >> ~/Inception/srcs/requirements/nginx/Dockerfile
 echo 'RUN mkdir -p /etc/nginx/ssl' >> ~/Inception/srcs/requirements/nginx/Dockerfile
 echo 'RUN apt-get install -y openssl' >> ~/Inception/srcs/requirements/nginx/Dockerfile
-echo 'RUN openssl req -x509 -nodes -out /etc/nginx/ssl/inception.crt -keyout /etc/nginx/ssl/inception.key -subj "/C=FR/ST=IDF/L=Paris/O=42/OU=42/CN=${USER}.42.fr/UID=${USER}"' >> ~/Inception/srcs/requirements/nginx/Dockerfile
+echo 'RUN openssl req -x509 -nodes -out /etc/nginx/ssl/inception.crt -keyout /etc/nginx/ssl/inception.key -subj "/C=FR/ST=IDF/L=Paris/O=42/OU=42/CN='"$USER"'.42.fr/UID='"$USER"'"' >> ~/Inception/srcs/requirements/nginx/Dockerfile
 echo 'RUN mkdir -p /var/run/nginx' >> ~/Inception/srcs/requirements/nginx/Dockerfile
 echo 'COPY ./conf/nginx.conf /etc/nginx/nginx.conf' >> ~/Inception/srcs/requirements/nginx/Dockerfile
 
@@ -41,7 +41,7 @@ echo '		listen 443 ssl;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '		listen [::]:443 ssl;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '\n' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '		root /var/www/html/wordpress;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
-echo '		server_name ${USER}.42.fr;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
+echo '		server_name '"$USER"'.42.fr;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '		index index.php index.html index.htm index.nginx-debian.html;' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '\n' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf
 echo '		location / ' >> ~/Inception/srcs/requirements/nginx/conf/nginx.conf

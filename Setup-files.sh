@@ -53,7 +53,7 @@ sleep 15
 
 clear
 
-echo -e "In 20s, the scripts will begin to configurate the files, if you want to do it later or by yourself, use ctrl+c"
+echo "In 20s, the scripts will begin to configurate the files, if you want to do it later or by yourself, use ctrl+c"
 
 sleep 20
 
@@ -118,3 +118,6 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/ma
 sleep 20
 
 clear
+
+sudo chmod 777 /etc/hosts
+echo "127.0.0.1	$USER.42.fr"

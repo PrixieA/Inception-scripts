@@ -56,7 +56,7 @@ echo 'log_error           = /var/log/mysql/error.log' >> ~/Inception/srcs/requir
 
 echo '#! /bin/bash' >> ~/Inception/srcs/requirements/mariadb/tools/dbscript.sh
 echo '\n' >> ~/Inception/srcs/requirements/mariadb/tools/dbscript.sh
-echo 'service mysql start;' >> ~/Inception/srcs/requirements/mariadb/tools/dbscript.sh
+echo 'sudo service mysql start;' >> ~/Inception/srcs/requirements/mariadb/tools/dbscript.sh
 echo '\n' >> ~/Inception/srcs/requirements/mariadb/tools/dbscript.sh
 echo 'mysql -e "CREATE DATABASE IF NOT EXISTS \`${SQL_DATABASE}\`;"' >> ~/Inception/srcs/requirements/mariadb/tools/dbscript.sh
 echo 'mysql -e ''"''CREATE USER IF NOT EXISTS \`${SQL_USER}\`@'"'"'localhost'"'"' IDENTIFIED BY '"'"'${SQL_PASSWORD}'"'"';''"' >> ~/Inception/srcs/requirements/mariadb/tools/dbscript.sh
