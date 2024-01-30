@@ -26,6 +26,7 @@ echo 'COPY ./conf/nginx.conf /etc/nginx/nginx.conf' >> ~/Inception/srcs/requirem
 docker build -t nginx ~/Inception/srcs/requirements/nginx
 docker image ls
 docker run -it nginx
+exit
 docker container ls
 
 # Configuration file
