@@ -9,7 +9,7 @@ echo '\n' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 echo 'RUN apt-get update -y' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 echo 'RUN apt-get upgrade -y' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 echo 'RUN apt-get install -y wget' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
-echo 'RUN apt-get install -y php7.4 php-fpm php-mysql' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
+echo 'RUN apt-get install -y php php-fpm php-mysql' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 echo '\n' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 
 # A command-line interface for WordPress, you can manage WordPress once it's downloaded
