@@ -9,7 +9,7 @@ echo '\n' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 echo 'RUN apt-get update -y' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 echo 'RUN apt-get upgrade -y' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 echo 'RUN apt-get install -y wget' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
-echo 'RUN apt-get install -y php7.3 php-fpm php-mysql' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
+echo 'RUN apt-get install -y php7.4 php-fpm php-mysql' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 echo '\n' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 
 # A command-line interface for WordPress, you can manage WordPress once it's downloaded
@@ -20,7 +20,7 @@ echo '	&& mv wp-cli.phar /usr/local/bin/wp' >> ~/Inception/srcs/requirements/wor
 echo '\n' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 echo 'RUN apt-get update && apt-get install -y default-mysql-client' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 echo 'RUN apt-get install -y mariadb-client' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
-echo 'RUN wget https://wordpress.org/wordpress-6.1.1.tar.gz -P /var/www/html' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
+echo 'RUN wget https://wordpress.org/wordpress-6.2.1.tar.gz -P /var/www/html' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 echo 'RUN cd /var/www/html \' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 echo '	&& tar -xzf /var/www/html/wordpress-6.1.1.tar.gz \' >> ~/Inception/srcs/requirements/wordpress/Dockerfile
 echo '	&& rm /var/www/html/wordpress-6.1.1.tar.gz' >> ~/Inception/srcs/requirements/wordpress/Dockerfile

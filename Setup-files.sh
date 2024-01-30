@@ -120,4 +120,4 @@ sleep 20
 clear
 
 sudo chmod 777 /etc/hosts
-echo "127.0.0.1	$USER.42.fr"
+echo "127.0.0.1	$USER.42.fr" >> /etc/hosts
