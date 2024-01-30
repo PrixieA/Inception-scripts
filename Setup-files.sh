@@ -37,7 +37,7 @@ touch ~/Inception/srcs/requirements/nginx/Dockerfile
 touch ~/Inception/srcs/requirements/nginx/.dockerignore
 mkdir ~/Inception/srcs/requirements/nginx/tools
 
-# WordPress
+# Wordpress
 
 mkdir ~/Inception/srcs/requirements/wordpress/conf
 touch ~/Inception/srcs/requirements/wordpress/Dockerfile
