@@ -53,9 +53,9 @@ sleep 15
 
 clear
 
-echo "In 20s, the scripts will begin to configurate the files, if you want to do it later or by yourself, use ctrl+c"
+echo "In 10s, the scripts will begin to configurate the files, if you want to do it later or by yourself, use ctrl+c"
 
-sleep 20
+sleep 10
 
 # Files config
 
@@ -65,7 +65,7 @@ echo "Let's begin with the config of NGINX"
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-nginx.sh)"
 
-sleep 20
+sleep 10
 
 clear
 
@@ -75,7 +75,7 @@ echo "Now MariaDB"
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-mariadb.sh)"
 
-sleep 20
+sleep 10
 
 clear
 
@@ -85,7 +85,7 @@ echo "Now WordPress"
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-wordpress.sh)"
 
-sleep 20
+sleep 10
 
 clear
 
@@ -95,7 +95,7 @@ echo "Now docker-compose"
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-dock-compose.sh)"
 
-sleep 20
+sleep 10
 
 
 clear
@@ -105,7 +105,7 @@ echo "Now env"
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-env.sh)"
 
-sleep 20
+sleep 10
 
 clear
 
@@ -115,7 +115,7 @@ echo "now Makefile"
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/PrixieA/Inception-scripts/master/Setup-makefile.sh)"
 
-sleep 20
+sleep 10
 
 clear
 
