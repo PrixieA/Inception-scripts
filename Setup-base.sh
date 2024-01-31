@@ -38,13 +38,13 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install -y ufw
 
-sudo apt-get update -y
-sudo apt-get upgrade -y
-sudo apt-get install -y php
+#sudo apt-get update -y
+#sudo apt-get upgrade -y
+#sudo apt-get install -y php
 
-sudo curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-chmod +x wp-cli.phar
-sudo mv wp-cli.phar /usr/local/bin/wp
+#sudo curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+#chmod +x wp-cli.phar
+#sudo mv wp-cli.phar /usr/local/bin/wp
 
 clear
 

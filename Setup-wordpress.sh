@@ -97,7 +97,7 @@ echo '\n' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
 
 # Start the PHP FastCGI Process Manager (FPM) for PHP version 7.3 in the foreground
 
-echo 'exec /usr/sbin/php-fpm7.3 -F -R' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
+echo 'exec /usr/sbin/php-fpm7.4 -F -R' >> ~/Inception/srcs/requirements/wordpress/tools/wpscript.sh
 
 # Config PHP
 
