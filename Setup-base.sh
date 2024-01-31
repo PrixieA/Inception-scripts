@@ -32,8 +32,6 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install -y zsh
 
-sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install -y ufw
